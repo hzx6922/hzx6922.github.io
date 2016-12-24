@@ -135,15 +135,25 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-关于JS闭包的测试" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-js闭包测试" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/24/js闭包测试/">js闭包测试</a>
+    </h1>
+  
+
+        <a href="/2016/12/24/js闭包测试/" class="archive-article-date">
+  	<time datetime="2016-12-24T05:00:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-24</time>
+</a>
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="关于JS闭包的测试"><a href="#关于JS闭包的测试" class="headerlink" title="关于JS闭包的测试"></a>关于JS闭包的测试</h1><h3 id="什么是闭包"><a href="#什么是闭包" class="headerlink" title="什么是闭包"></a>什么是闭包</h3><ul>
-<li>当一个内部行数在定义他的作用域外部被引用的时候,就创建了这个内部函数的闭包</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">function foo()&#123;</div><div class="line">    var secret = &quot;secret&quot;</div><div class="line">    //&quot;闭包内的函数&quot; 可以访问上面的secret变量,而secret对外部作用域却是隐蔽的</div><div class="line"></div><div class="line">    return &#123;</div><div class="line">        get_secret:function () &#123;</div><div class="line">        //定义接口来访问 secret 变量</div><div class="line">            return secret;</div><div class="line">        &#125;,</div><div class="line">        new_secret:function (new_secret)&#123;</div><div class="line">            secret = new_secret;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">        console.log(foo().new_secret(2));</div><div class="line">        console.log(foo().get_secret());</div></pre></td></tr></table></figure>
+        
       
 
       
@@ -155,7 +165,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2016/12/24/关于JS闭包的测试/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/12/24/js闭包测试/">展开全文 >></a>
         </p>
       
 
