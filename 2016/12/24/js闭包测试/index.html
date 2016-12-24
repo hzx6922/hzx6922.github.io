@@ -8,13 +8,28 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>js闭包测试 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="关于JS闭包的测试### 什么是闭包
+- 当一个内部行数在定义他的作用域外部被引用的时候,就创建了这个内部函数的闭包
+
+
+12345678910111213141516function foo()&amp;#123;    var secret = &amp;quot;secret&amp;quot;    //&amp;quot;闭包内的函数&amp;quot; 可以访问上面的secret变量,而secret对外部作用域却是隐蔽的">
+<meta property="og:type" content="article">
 <meta property="og:title" content="js闭包测试">
 <meta property="og:url" content="http://yoursite.com/2016/12/24/js闭包测试/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:updated_time" content="2016-12-24T05:00:38.508Z">
+<meta property="og:description" content="关于JS闭包的测试### 什么是闭包
+- 当一个内部行数在定义他的作用域外部被引用的时候,就创建了这个内部函数的闭包
+
+
+12345678910111213141516function foo()&amp;#123;    var secret = &amp;quot;secret&amp;quot;    //&amp;quot;闭包内的函数&amp;quot; 可以访问上面的secret变量,而secret对外部作用域却是隐蔽的">
+<meta property="og:updated_time" content="2016-12-24T05:10:13.093Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js闭包测试">
+<meta name="twitter:description" content="关于JS闭包的测试### 什么是闭包
+- 当一个内部行数在定义他的作用域外部被引用的时候,就创建了这个内部函数的闭包
+
+
+12345678910111213141516function foo()&amp;#123;    var secret = &amp;quot;secret&amp;quot;    //&amp;quot;闭包内的函数&amp;quot; 可以访问上面的secret变量,而secret对外部作用域却是隐蔽的">
   
   
     <link rel="icon" href="/favicon.png">
@@ -152,7 +167,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="关于JS闭包的测试"><a href="#关于JS闭包的测试" class="headerlink" title="关于JS闭包的测试"></a>关于JS闭包的测试</h1><pre><code>### 什么是闭包
+- 当一个内部行数在定义他的作用域外部被引用的时候,就创建了这个内部函数的闭包
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">function foo()&#123;</div><div class="line">    var secret = &quot;secret&quot;</div><div class="line">    //&quot;闭包内的函数&quot; 可以访问上面的secret变量,而secret对外部作用域却是隐蔽的</div><div class="line"></div><div class="line">    return &#123;</div><div class="line">        get_secret:function () &#123;</div><div class="line">        //定义接口来访问 secret 变量</div><div class="line">            return secret;</div><div class="line">        &#125;,</div><div class="line">        new_secret:function (new_secret)&#123;</div><div class="line">            secret = new_secret;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">        console.log(foo().new_secret(2));</div><div class="line">        console.log(foo().get_secret());</div></pre></td></tr></table></figure>
+</code></pre>
       
 
       
