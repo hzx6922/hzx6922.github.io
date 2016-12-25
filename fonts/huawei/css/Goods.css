@@ -1,0 +1,328 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+
+.hr-1 {
+	clear: both;
+	height: 10px;
+	font-size: 1px;
+	line-height: 1px;
+}
+
+.hr-10 {
+	clear: both;
+	height: 10px;
+	font-size: 1px;
+	line-height: 1px;
+}
+
+.hr-20 {
+	clear: both;
+	height: 20px;
+	font-size: 1px;
+	line-height: 1px;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+.shortcut {
+	min-width: 1200px;
+	height: 29px;
+	line-height: 29px;
+	background-color: #FAFAFA;
+	border-bottom: 1px solid #EDEDED;
+	position: relative;
+	z-index: 40;
+}
+
+.shortcut a {
+	font-size: 12px;
+	color: #8C8C8C;
+	text-decoration: none;
+}
+
+.shortcut a:hover {
+	color: #C81118;
+}
+
+.layout {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.s-sub {
+	float: left;
+}
+
+.s-sub>ul>li {
+	float: left;
+	padding-left: 9px;
+	background-image: url(../img/icon/bg65.png);
+	background-repeat: no-repeat;
+	background-position: 5px 11px;
+}
+
+.s-main {
+	float: right;
+}
+
+.s-main>ul>li {
+	float: left;
+	padding-left: 9px;
+	background-image: url(../img/icon/bg65.png);
+	background-repeat: no-repeat;
+	background-position: 5px 11px;
+}
+
+.s-sub>ul>li.s-hw {
+	background-image: none;
+	padding-left: 0;
+}
+
+.s-main>ul>li.s-login {
+	background-image: none;
+}
+
+.s-appsoft {
+	position: relative;
+}
+
+.s-appsoft .h {
+	position: relative;
+	padding: 0 27px 0 10px;
+	height: 29px;
+}
+
+.s-appsoft s {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -2px;
+	width: 7px;
+	height: 4px;
+	line-height: 0;
+	background-position: -34px 0;
+	background-image: url(../img/icon/sprites3.png);
+}
+
+.s-appsoft:hover .h {
+	margin: -1px;
+	border: 1px solid #EDEDED;
+	border-bottom: 0 none;
+	background-color: #FFF;
+}
+
+.s-appsoft:hover .b {
+	margin-top: -1px;
+	border-top: 0 none;
+	display: block;
+}
+
+.s-appsoft .b {
+	width: 87px;
+	box-sizing: border-box;
+	padding-top: 4px;
+	padding: 0 10px;
+	padding-bottom: 4px;
+	line-height: 24px;
+	border: 1px solid #EDEDED;
+	position: absolute;
+	top: 29px;
+	left: 8px;
+	background-color: #FFF;
+	display: none;
+}
+.s-dropdown{
+	position: relative;
+}
+
+.s-dropdown .h {
+	position: relative;
+	padding: 0 27px 0 10px;
+	height: 29px;
+}
+
+.s-dropdown .b {
+	width: 87px;
+	box-sizing: border-box;
+	padding-top: 4px;
+	padding: 0 16px 0 10px;
+	padding-bottom: 4px;
+	line-height: 24px;
+	border: 1px solid #EDEDED;
+	position: absolute;
+	top: 29px;
+	right: -1px;
+	background-color: #FFF;
+	display: none;
+}
+
+.s-dropdown:hover .h {
+	margin: -1px;
+	border: 1px solid #EDEDED;
+	border-bottom: 0 none;
+	background-color: #FFF;
+}
+
+.s-dropdown:hover .b {
+	margin-top: -1px;
+	border-top: 0 none;
+	display: block;
+}
+
+.s-dropdown s {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -2px;
+	width: 7px;
+	height: 4px;
+	line-height: 0;
+	background-position: -34px 0;
+	background-image: url(../img/icon/sprites3.png);
+}
+
+.logo {
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.logo div.L1 {
+	float: left;
+}
+
+.logo-content {
+	display: table-cell;
+	width: 345px;
+	height: 112px;
+	padding: 0 !important;
+	vertical-align: middle;
+}
+
+.logo-content>a>img {
+	cursor: pointer;
+}
+
+
+
+.layout .pro-tips{
+	border: 1px solid #dedede;
+	overflow: hidden;
+}
+
+.pro-pic{
+	float: left;
+}
+
+.pro-area{
+	float: left;
+}
+
+.nav{
+	height: 20px;
+	background-color: #000000;
+}
+
+.pro-area-right{
+	width: 657px;
+	height: 262px;
+	float: right;
+	border-left: 1px solid #DEDEDE;
+	padding: 36px 0 138px;
+	position: relative;
+}
+.pro-area-right:after{
+	content: "";
+	display: table;
+	font-size: 0;
+	height: 0;
+	visibility: visible;
+}
+
+.pro-area-right h1.name{
+	font-size: 20px;
+}
+
+.pro-area-right div.slogan{
+	size: 16px;
+	color: #e01d20;
+}
+
+.gold{
+	padding: 3px 30px 0;
+	font-size: 14px;
+}
+
+.pro-gold{
+	font-weight: bolder;
+	color: #C81118;
+}
+
+.pro-color img{
+	margin-left: 20px;
+	border: 1px solid #CA141D;
+}
+
+.pro-unit{
+	margin-top: 10px;
+}
+
+.pro-unit a{
+	width: 40px;
+	height: 55px;
+	padding: 3px 8px;
+	color: #333333;
+	font-size: 14px;
+	border: 1px solid #CA141D;
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+
+.ex-G{
+	width: 130px;
+	height: 40px;
+	line-height: 40px;
+	padding: 3px 8px;
+	font-size: 14px;
+	border: 1px solid #CA141D;
+	text-decoration: none;
+	margin-left: 10px;
+	position: absolute;
+	right: 240px;
+	bottom: 30px;
+	text-align: center;
+	font-weight: bolder;
+	color: white;
+	background-color: #CA151C;
+}
+
+.ex-M{
+	width: 130px;
+	height: 40px;
+	line-height: 40px;
+	padding: 3px 8px;
+	font-size: 14px;
+	border: 1px solid #CA141D;
+	text-decoration: none;
+	margin-left: 10px;
+	position: absolute;
+	right: 85px;
+	bottom: 30px;
+	text-align: center;
+	font-weight: bolder;
+	color: white;
+	background-color: #ff7d43;
+}
+
+.content{
+	padding: 40px;
+	text-align: center;
+	font-size: 0;
+}

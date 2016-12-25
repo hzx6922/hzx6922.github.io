@@ -1,0 +1,428 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+
+.hr-1 {
+	clear: both;
+	height: 10px;
+	font-size: 1px;
+	line-height: 1px;
+}
+
+.hr-10 {
+	clear: both;
+	height: 10px;
+	font-size: 1px;
+	line-height: 1px;
+}
+
+.hr-20 {
+	clear: both;
+	height: 20px;
+	font-size: 1px;
+	line-height: 1px;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+.shortcut {
+	min-width: 1200px;
+	height: 29px;
+	line-height: 29px;
+	background-color: #FAFAFA;
+	border-bottom: 1px solid #EDEDED;
+	position: relative;
+	z-index: 40;
+}
+
+.shortcut a {
+	font-size: 12px;
+	color: #8C8C8C;
+	text-decoration: none;
+}
+
+.shortcut a:hover {
+	color: #C81118;
+}
+
+.layout {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.s-sub {
+	float: left;
+}
+
+.s-sub>ul>li {
+	float: left;
+	padding-left: 9px;
+	background-image: url(../img/icon/bg65.png);
+	background-repeat: no-repeat;
+	background-position: 5px 11px;
+}
+
+.s-main {
+	float: right;
+}
+
+.s-main>ul>li {
+	float: left;
+	padding-left: 9px;
+	background-image: url(../img/icon/bg65.png);
+	background-repeat: no-repeat;
+	background-position: 5px 11px;
+}
+
+.s-sub>ul>li.s-hw {
+	background-image: none;
+	padding-left: 0;
+}
+
+.s-main>ul>li.s-login {
+	background-image: none;
+}
+
+.s-appsoft {
+	position: relative;
+}
+
+.s-appsoft .h {
+	position: relative;
+	padding: 0 27px 0 10px;
+	height: 29px;
+}
+
+.s-appsoft s {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -2px;
+	width: 7px;
+	height: 4px;
+	line-height: 0;
+	background-position: -34px 0;
+	background-image: url(../img/icon/sprites3.png);
+}
+
+.s-appsoft:hover .h {
+	margin: -1px;
+	border: 1px solid #EDEDED;
+	border-bottom: 0 none;
+	background-color: #FFF;
+}
+
+.s-appsoft:hover .b {
+	margin-top: -1px;
+	border-top: 0 none;
+	display: block;
+}
+
+.s-appsoft .b {
+	width: 87px;
+	box-sizing: border-box;
+	padding-top: 4px;
+	padding: 0 10px;
+	padding-bottom: 4px;
+	line-height: 24px;
+	border: 1px solid #EDEDED;
+	position: absolute;
+	top: 29px;
+	left: 8px;
+	background-color: #FFF;
+	display: none;
+}
+.s-dropdown{
+	position: relative;
+}
+
+.s-dropdown .h {
+	position: relative;
+	padding: 0 27px 0 10px;
+	height: 29px;
+}
+
+.s-dropdown .b {
+	width: 87px;
+	box-sizing: border-box;
+	padding-top: 4px;
+	padding: 0 16px 0 10px;
+	padding-bottom: 4px;
+	line-height: 24px;
+	border: 1px solid #EDEDED;
+	position: absolute;
+	top: 29px;
+	right: -1px;
+	background-color: #FFF;
+	display: none;
+}
+
+.s-dropdown:hover .h {
+	margin: -1px;
+	border: 1px solid #EDEDED;
+	border-bottom: 0 none;
+	background-color: #FFF;
+}
+
+.s-dropdown:hover .b {
+	margin-top: -1px;
+	border-top: 0 none;
+	display: block;
+}
+
+.s-dropdown s {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -2px;
+	width: 7px;
+	height: 4px;
+	line-height: 0;
+	background-position: -34px 0;
+	background-image: url(../img/icon/sprites3.png);
+}
+
+.logo {
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.logo div.L1 {
+	float: left;
+}
+
+.logo-content {
+	display: table-cell;
+	width: 345px;
+	height: 112px;
+	padding: 0 !important;
+	vertical-align: middle;
+}
+
+.logo-content>a>img {
+	cursor: pointer;
+}
+
+.LR {
+	float: right;
+}
+
+.LRdiv1 {
+	margin-top: 36px;
+}
+
+.cart-prepare {
+	width: 574px;
+	height: 34px;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	background-image: url(../img/LOGO/cart.png);
+}
+
+.divTable table {
+	border-collapse: collapse;
+}
+
+.tr-check {
+	width: 37px;
+	padding-right: 7px;
+}
+
+.tr-pro {
+	width: 617px;
+	border-right: 0 none;
+}
+
+.tr-price {
+	width: 155px;
+	border-left: 0 none;
+}
+
+.tr-quantity {
+	width: 140px;
+}
+
+.tr-subtotal {
+	width: 140px;
+}
+
+.tr-operate {
+	width: 100px;
+}
+
+thead {
+	border: 1px solid #DEDEDE;
+	background-color: #F7F7F7;
+}
+
+td {
+	height: 105px;
+	text-align: center;
+	border: 1px solid #DEDEDE;
+}
+
+tbody .tr-check {
+	border-right: 0 none;
+}
+
+tbody .tr-pro {
+	border-left: 0 none;
+}
+
+th {
+	height: 30px;
+	text-align: center;
+}
+
+.trPro-img {
+	float: left;
+	position: relative;
+	width: 80px;
+	z-index: 1;
+	background-color: #FFF;
+}
+
+.trPro-img img {
+	display: block;
+	width: 63px;
+	height: 63px;
+	vertical-align: top;
+	border: 1px solid #DEDEDE;
+}
+
+p.trPro-name {
+	text-align: left;
+	color: #333;
+	line-height: 17px;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+.tr-quantity {
+	position: relative;
+}
+
+.tr-quantity input {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+}
+
+.tr-quantity .add,
+.minus {
+	width: 17px;
+	height: 17px;
+	position: absolute;
+	border: 1px solid #DEDEDE;
+	right: 27px;
+	background: url(../img/icon/icon31.png) scroll no-repeat;
+	transition: .7s ease;
+	/*top: 0;*/
+}
+
+.tr-quantity .add {
+	top: 31px;
+	background-position: 1px -41px;
+}
+
+.add:hover {
+	cursor: pointer;
+	border: 1px solid #F5F5F5;
+}
+
+.tr-quantity .minus {
+	top: 54px;
+	background-position: 1px -64px;
+}
+
+.minus:hover {
+	cursor: pointer;
+	border: 1px solid #F5F5F5;
+}
+
+.tr-operate a {
+	margin: 0 auto;
+	width: 17px;
+	height: 17px;
+	display: block;
+	background: url(../img/icon/icon33.png) scroll no-repeat;
+	background-position: -16px -30px;
+	cursor: pointer;
+}
+
+.tr-operate a:hover {
+	background-position: 4px -51px;
+	background-color: #e01d20;
+}
+
+
+/*Tbody 结束*/
+
+#booter {
+	border: 1px solid #DEDEDE;
+	overflow: hidden;
+	transition: .8s ease;
+}
+
+.boot-leftCon {
+	float: left;
+	padding: 11px 0 0 12px;
+}
+
+.boot-rightCon {
+	float: right;
+	margin-right: 24px;
+}
+
+.boot-rightCon #total td {
+	width: 70px;
+	height: 50px;
+	border: 0 none;
+	border-top: 1px solid #DEDEDE;
+}
+
+.boot-rightCon #total th {
+	width: 190px;
+	height: 50px;
+	margin-right: -1px;
+	border-top: 1px solid #DEDEDE;
+	color: #CA141D;
+	font-size: 14px;
+}
+
+.CAB{
+	font-size: 12px;
+	text-decoration: none;
+	color: #007dff;
+	line-height: 12px;
+}
+label.CAB{
+	cursor: pointer;
+}
+
+#costAllTo{
+	font-size: 1.2em;
+	font-weight: bolder;
+}
+
+#tips-car{
+	height: 85px;
+	padding-top: 240px;
+	text-align: center;
+	color: #7f7f7f;
+	font-size: 14px;
+	background: url(../img/icon/bg31.png) center 40px no-repeat;
+}
+
+#privilege{
+	width: 110px;
+	text-align: center;
+}

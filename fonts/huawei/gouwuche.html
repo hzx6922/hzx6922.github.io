@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车界面</title>
+		<link rel="stylesheet" type="text/css" href="css/gouwuche.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.js" ></script>
+		<script type="text/javascript" src="js/cart-script.js" ></script>
+	</head>
+
+	<body>
+		<div class="shortcut">
+			<div class="layout">
+				<div class="s-sub">
+					<ul>
+						<li class="s-hw">
+							<a href="javascript:;">华为官网</a>
+						</li>
+						<li class="s-honor">
+							<a href="javascript:;">荣耀官网</a>
+						</li>
+						<li class="s-appsoft">
+							<div class="h">
+								<a href="javascript:;">软件应用</a>
+								<s></s>
+							</div>
+
+							<div class="b">
+								<p>
+									<a href="javascript:;">EMUI</a>
+								</p>
+								<p>
+									<a href="javascript:;">应用市场</a>
+								</p>
+								<p>
+									<a href="javascript:;">云服务</a>
+								</p>
+								<p>
+									<a href="javascript:;">开发者联盟</a>
+								</p>
+							</div>
+						</li>
+						<li class="s-club">
+							<a href="javascript:;">花粉俱乐部</a>
+						</li>
+						<li class="s-sr">
+							<a href="javascript:;">Select Region</a>
+						</li>
+					</ul>
+				</div>
+				<div class="s-main">
+					<ul>
+						<li class="s-login">
+							<a href="javascript:;">登录</a>
+							<a href="javascript:;">注册</a>
+						</li>
+						<li class="s-myOrders">
+							<a href="javascript:;">我的订单</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">V码(优购码)</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">手机版</a>
+						</li>
+						<li class="s-sitemap">
+							<div class="s-dropdown">
+								<div class="h">
+									<a href="javascript:;">网站导航</a>
+									<s></s>
+								</div>
+
+								<div class="b">
+									<p>
+										<a href="javascript:;">帮助中心</a>
+									</p>
+									<p>
+										<a href="javascript:;">PC软件</a>
+									</p>
+									<p>
+										<a href="javascript:;">数字音乐</a>
+									</p>
+									<p>
+										<a href="javascript:;">爱旅</a>
+									</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="hr-1">
+
+		</div>
+
+		<div class="order-header">
+			<div class="logo">
+				<div class="L1">
+					<div class="logo-content">
+						<a href="javascript:;">
+							<img src="img/LOGO/LOGO.png" />
+						</a>
+					</div>
+				</div>
+
+				<div class="LR">
+					<div class="LRdiv1">
+						<div class="cart-prepare">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="layout">
+			<div id="tips-car">
+						亲，您购物车里还没有物品哦，快去逛逛吧！
+					</div>
+			<div class="divTable">
+				<table>
+					<thead>
+						<tr>
+							<th class="tr-check"><input title="全选" id="checkAll" type="checkbox" /></th>
+							<th class="tr-pro"></th>
+							<th class="tr-price">单价</th>
+							<th class="tr-quantity">数量</th>
+							<th class="tr-subtotal">小计(单位:元)</th>
+							<th class="tr-operate">操作</th>
+						</tr>
+					</thead>
+					<tbody id="content">
+						<!--<tr>
+							<td class="tr-check"><input id="checkAll" type="checkbox" /></td>
+							<td class="tr-pro">
+								<div class="trPro-img">
+									<img src="../img/pic/1474556906965.jpg" />
+								</div>
+								<p class="trPro-name">我是名字</p>
+							</td>
+							<td class="tr-price"><span>799.00</span></td>
+							<td class="tr-quantity">
+								<input id="proNumber" type="text" />
+								<a id="add"></a>
+								<a id="minus"></a>
+							</td>
+							<td class="tr-subtotal"><span>¥</span><span class="proAlls">799.00</span></td>
+							<td class="tr-operate">
+								<a></a>
+							</td>-->
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		<div class="hr-20">
+			
+		</div>
+		
+		<div class="layout">
+			<div id="booter">
+				<div class="boot-leftCon">
+					<input type="checkbox" id="checkAll-buttom" class="CAB" />
+					<label class="CAB" for="checkAll-buttom" >全选</label>
+					<a class="CAB" href="javascript:;">删除所选商品</a>
+				</div>
+				
+				<div class="boot-rightCon">
+					<table>
+						<tbody id="total" >
+						<tr>
+							<th style="border: 0 none;" >总计价格</th>
+							<td id="costAll" style="border: 0 none;" >-</td>
+						</tr>
+						
+						<tr>
+							<th>优惠</th>
+							<td>
+								<select id="privilege" >
+									<option value="0" >不使用优惠劵</option>
+									<option value="1000" >1000元优惠劵</option>
+									<option value="1500" >1500元优惠劵</option>
+									<option value="2000" >2000元优惠劵</option>
+								</select>
+							</td>
+						</tr>
+						
+						<tr>
+							<th>合计(不含运费)</th>
+							<td id="costAllTo" >-</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

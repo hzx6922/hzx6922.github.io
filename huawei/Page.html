@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>全屏滚动</title>
+		<script type="text/javascript" src="js/jquery-1.8.3.js" ></script>
+		<script type="text/javascript" src="js/jquery.fullPage.js" ></script>
+		<script type="text/javascript" src="js/jquery.fullPage.min.js" ></script>
+		<link rel="stylesheet" type="text/css" href="css/pege.css" />
+
+		<script type="text/javascript">
+			$(function() {   
+				$('#fullpage').fullpage({      
+					'verticalCentered': true,
+					      'css3': true,
+					      'sectionsColor': ['#3fd344', '#FFC107', '#254587', '#695684'],
+					      'anchors': ['page1', 'page2', 'page3', 'page4'],
+					      'navigation': true,
+					      'navigationPosition': 'right',
+					      'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple']   
+				})
+			})
+		</script>
+	</head>
+
+	<body>
+		<div id="fullpage">
+			<div class="section">
+				<div><img src="PAGE/1.png" /></div>
+				<p>大雪：初候，鹖鴠不鸣。鹖鴠，音曷旦，夜鸣求旦之鸟，亦名寒号虫，乃阴类而求阳者，兹得一阳之生，故不鸣矣。 二候，虎始交；虎本阴类。感一阳而交也。三候，荔挺出。荔，一名马蔺，叶似蒲而小，根可为刷。</p>
+			</div>
+
+			<div class="section">
+				<div><img src="PAGE/2.png" /></div>
+				<p>冬至：初候，蚯蚓结；阳气未动，屈首下向，阳气已动，回首上向，故屈曲而结。 二候，麇角解；阴兽也。得阳气而解。 三侯，水泉动，天一之阳生也。</p>
+			</div>
+
+			<div class="section">
+				<div><img src="PAGE/3.png" /></div>
+				<p>小寒：初候，雁北乡；一岁之气，雁凡四候。如十二月雁北乡者，乃大雁，雁之父母也。正月侯雁北者，乃小雁，雁之子也。盖先行者其大，随后者其小也。此说出晋干宝，宋人述之以为的论。 二候，鹊始巢；鹊知气至，故为来岁之巢。 三候，雉雊；雊，句姤二音，雉鸣也。雉火畜，感于阳而后有声。</p>
+			</div>
+
+			<div class="section">
+				<div><img src="PAGE/4.png" /></div>
+				<p>大寒：初候，鸡乳；鸡，水畜也，得阳气而卵育，故云乳。 二候，征鸟厉疾；征鸟，鹰隼之属，杀气盛极，故猛厉迅疾而善于击也。 三候，水泽腹坚。阳气未达，东风未至，故水泽正结而坚。</p>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,124 @@
+.body-warp{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.logo{
+	width: 900px;
+	margin: 0 auto;
+	padding: 27px 0 0 33px;
+}
+
+.logo>.logo-img{
+	background: url(../img/LOGO/MGLOGO_220x52.png) no-repeat;
+	display: inline-block;
+	width: 220px;
+	height: 52px;
+	cursor: auto;
+}
+
+.content{
+	padding-top: 40px;
+}
+
+.banner{
+	float: left;
+	padding: 20px 0 0 80px;
+}
+
+.LoginUi{
+	float: right;
+	width: 332px;
+	height: 310px;
+	border: 1px solid #DEDEDE;
+	margin-right: 100px;
+}
+
+.LoginUi:after{
+	content: "";
+	display: table;
+	height: 0px;
+	font-size: 0px;
+	clear: both;
+	visibility: visible;
+}
+
+.title{
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #DEDEDE;
+	margin-bottom: 10px;
+}
+
+.tab{
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+.titleTab{
+	display: block;
+	width: 120px;
+	height: 41px;
+	line-height: 41px;
+	margin: 10px auto 0;
+	color: #333;
+	text-decoration: none;
+	font-weight: bolder;
+}
+
+.on{
+	border-bottom: 2px solid #e91e63;
+	height: 39px;
+	color: #e91e63;
+}
+
+.formBox{
+	padding: 0 0 30px 26px;
+}
+
+.error_tip{
+	background: url(../img/icon/Ico_Error_16x16.png) no-repeat 12px #FFFFF8;
+	border: 1px solid #ffd797;
+	height: 30px;
+	line-height: 30px;
+	color: #ff1877;
+	width: 240px;
+	padding-left: 40px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	font-weight: bolder;
+	display: block;
+}
+
+.userInput{
+/*	background:  none !important;
+*/	border: 1px solid #CFCFCF;
+	height: 28px;
+	padding: 0 6px;
+	width: 269px;
+	margin-bottom: 9px;
+}
+
+.Login{
+	border: 1px solid #fff;
+	height: 35px;
+	padding: 0 6px;
+	width: 285px;
+	background-color: #ff1877;
+	margin-top: 19px;
+	color: #FFF;
+	font-size: 14px;
+	border-radius: 5px;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.reg>a{
+	display: inline-block;
+	margin-top: 15px;
+	font-size: 12px;
+	color: #999;
+	text-decoration: none;
+}
+
