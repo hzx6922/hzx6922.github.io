@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>猫猪的博客</title>
+  <title>Tag: javascript | 猫猪的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="猫猪的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/javascript/index.html">
 <meta property="og:site_name" content="猫猪的博客">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="猫猪的博客">
@@ -125,65 +125,52 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-js闭包测试" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-      <header class="article-header">
-        
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2016" class="archive-year">2016</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2016/12/24/js闭包测试/" class="archive-article-date">
+  	<time datetime="2016-12-24T05:00:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-24</time>
+</a>
+        </div>
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/24/js闭包测试/">js闭包测试</a>
+      <a class="archive-article-title" href="/2016/12/24/js闭包测试/">js闭包测试</a>
     </h1>
   
 
-        <a href="/2016/12/24/js闭包测试/" class="archive-article-date">
-  	<time datetime="2016-12-24T05:00:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-24</time>
-</a>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="闭包（closure）"><a href="#闭包（closure）" class="headerlink" title="闭包（closure）"></a>闭包（closure）</h3><blockquote>
-<p>当内部函数在定义它的作用域的外部被引用时,就创建了该内部函数的一个<strong>闭包</strong>。在这种情况下，我们称既不是内部函数局域变量，也不是其参数的变量为自由变量,称外部函数的调用环境为<strong>封闭</strong>闭包的环境。从本质上讲，如果内部函数引用了位于外部函数中的变量，相当于授权该变量能够被延迟使用。因此，当外部函数调用完成后，这些变量的内存不会被释放，因为闭包任然需要使用他们。</p>
-</blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>)</span>&#123;</div><div class="line">            <span class="keyword">var</span> secret = <span class="string">"secret"</span></div><div class="line">            <span class="comment">//"闭包内的函数" 可以访问上面的secret变量,而secret对外部作用域却是隐蔽的</span></div><div class="line"></div><div class="line">            <span class="keyword">return</span> &#123;</div><div class="line">                <span class="attr">get_secret</span>:<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">                    <span class="comment">//定义接口来访问 secret 变量</span></div><div class="line"></div><div class="line">                    <span class="keyword">return</span> secret;</div><div class="line">                &#125;,</div><div class="line">                <span class="attr">new_secret</span>:<span class="function"><span class="keyword">function</span> (<span class="params">new_secret</span>)</span>&#123;</div><div class="line">                    secret = new_secret;</div><div class="line">                &#125;</div><div class="line"></div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="built_in">console</span>.log(foo().new_secret(<span class="number">2</span>));</div><div class="line"></div><div class="line">        <span class="built_in">console</span>.log(foo().get_secret());</div></pre></td></tr></table></figure>
-<p>上面就创建了一个闭包,但是闭包的对象是指什么呢 函数foo 还是 secret 呢…不知道了</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
 	</div>
 
-      
+          
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/12/24/js闭包测试/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-
-
-
-
-
-
-
   
   
+    </div></section>
+  
+
+    
 
 
           </div>
@@ -205,10 +192,10 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",
