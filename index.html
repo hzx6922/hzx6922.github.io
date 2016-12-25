@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo</title>
+  <title>猫猪的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="猫猪的博客">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="猫猪的博客">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="猫猪的博客">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/favicon.ico">
   
   <link rel="stylesheet" href="/main.css?v=4.0.0.css">
   
@@ -37,7 +37,7 @@
 		</a>
 
 		<hgroup>
-		  <h1 class="header-author"><a href="/">John Doe</a></h1>
+		  <h1 class="header-author"><a href="/">贤鱼</a></h1>
 		</hgroup>
 
 		
@@ -46,8 +46,6 @@
 			<ul>
 			
 				<li><a href="/">主页</a></li>
-	        
-				<li><a href="/tags/随笔/">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -60,21 +58,13 @@
     			
             
     			
-    			<a data-idx="1" q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
-    			
-    			
             
-    			
-    			<a data-idx="2" q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
-    			
     			
             
 		</nav>
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-		        
 					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 		        
 					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
@@ -89,7 +79,7 @@
       <nav id="mobile-nav">
   	<div class="overlay">
   		<div class="slider-trigger"><i class="icon-sort"></i></div>
-  		<h1 class="header-author js-mobile-header hide">John Doe</h1>
+  		<h1 class="header-author js-mobile-header hide">贤鱼</h1>
   	</div>
 	<div class="intrude-less">
 		<header id="header" class="inner">
@@ -97,15 +87,13 @@
 				<img src="http://ww1.sinaimg.cn/mw1024/6ce2240djw1e9112irynuj20hs0hs42i.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author">John Doe</h1>
+			  <h1 class="header-author">贤鱼</h1>
 			</hgroup>
 			
 			<nav class="header-menu">
 				<ul>
 				
 					<li><a href="/">主页</a></li>
-		        
-					<li><a href="/tags/随笔/">随笔</a></li>
 		        
 		        
 		        	<li><a href="/archives/">所有文章</a></li>
@@ -115,8 +103,6 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-			        
 						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 			        
 						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
@@ -153,12 +139,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="关于JS闭包的测试"><a href="#关于JS闭包的测试" class="headerlink" title="关于JS闭包的测试"></a>关于JS闭包的测试</h1><pre><code>### 什么是闭包
-- 当一个内部行数在定义他的作用域外部被引用的时候,就创建了这个内部函数的闭包
+        <p>#关于JS闭包的测试</p>
+<pre><code>###什么是闭包
+-当一个内部行数在定义他的作用域外部被引用的时候,就创建了这个内部函数的闭包
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">function foo()&#123;</div><div class="line">    var secret = &quot;secret&quot;</div><div class="line">    //&quot;闭包内的函数&quot; 可以访问上面的secret变量,而secret对外部作用域却是隐蔽的</div><div class="line"></div><div class="line">    return &#123;</div><div class="line">        get_secret:function () &#123;</div><div class="line">        //定义接口来访问 secret 变量</div><div class="line">            return secret;</div><div class="line">        &#125;,</div><div class="line">        new_secret:function (new_secret)&#123;</div><div class="line">            secret = new_secret;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">        console.log(foo().new_secret(2));</div><div class="line">        console.log(foo().get_secret());</div></pre></td></tr></table></figure>
 
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">function foo()&#123;</div><div class="line">    var secret = &quot;secret&quot;</div><div class="line">    //&quot;闭包内的函数&quot; 可以访问上面的secret变量,而secret对外部作用域却是隐蔽的</div><div class="line"></div><div class="line">    return &#123;</div><div class="line">        get_secret:function () &#123;</div><div class="line">        //定义接口来访问 secret 变量</div><div class="line">            return secret;</div><div class="line">        &#125;,</div><div class="line">        new_secret:function (new_secret)&#123;</div><div class="line">            secret = new_secret;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">        console.log(foo().new_secret(2));</div><div class="line">        console.log(foo().get_secret());</div></pre></td></tr></table></figure>
-</code></pre>
       
 
       
@@ -198,7 +183,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2016 John Doe
+    		&copy; 2016 贤鱼
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -285,45 +270,7 @@
     
 
     
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
-    
 
-    
-    	<section class="tools-section tools-section-me" q-show="aboutme">
-  	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
-  	  	
-    	</section>
     
   </div>
   
