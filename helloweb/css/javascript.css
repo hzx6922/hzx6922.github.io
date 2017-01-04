@@ -1,0 +1,28 @@
+.section > div > article {
+  margin-left: 295px; }
+
+.section1 div > article > h1 {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%); }
+.section1 div > article > p {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%); }
+
+.section2 div > article > h1 {
+  -webkit-transform: translate(150%, 100%);
+  transform: translate(150%, 100%); }
+.section2 div > article > *:not(h1) {
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  opacity: 0; }
+
+.section3 > div > article {
+  -webkit-transform: translateY(400%);
+  transform: translateY(400%); }
+
+@media screen and (min-width: 760px) and (max-width: 1050px) {
+  .section > div > article {
+    margin: 0 50px; } }
+@media screen and (max-width: 760px) {
+  .section > div > article {
+    margin: 0 50px; } }

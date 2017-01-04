@@ -1,0 +1,329 @@
+body, html {
+    height: 100%;
+    overflow-x: hidden;
+    font-size: 100%;
+    color: #222;
+    font-family: "微软雅黑";
+}
+
+.clearfix::before {
+    content: "";
+    display: table;
+}
+
+.layout {
+    /*padding-left: 290px;*/
+    width: 100%;
+}
+
+.layout::after {
+    content: "";
+    clear: both;
+    visibility: hidden;
+}
+
+.layout::before {
+    content: "";
+    clear: both;
+    visibility: hidden;
+}
+
+.off::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #b38b4d;
+    content: '';
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transform: rotate(-45deg) translateY(0%) !important;
+}
+
+.off::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #b38b4d;
+    content: '';
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transform: rotate(45deg) translateY(0%) !important;
+}
+
+.on {
+    color: #03A9F4 !important;
+}
+
+.on::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    display: block;
+    background-color: #03A9F4 !important;
+    left: -30px;
+    top: 50%;
+    text-decoration: none;
+}
+
+.nvaTL {
+    display: flex;
+    left: 0;
+    height: 100%;
+    width: 290px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #d4d5d4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.nvaTL h1 {
+    position: absolute;
+    bottom: 185px;
+    left: 30px;
+}
+
+.nvaTL .nav-main {
+    display: block;
+    position: relative;
+    top: 0;
+    margin: 30px 0 0 -7px;
+}
+
+.nvaTL .nav-main ul {
+    list-style: none;
+}
+
+.nvaTL .nav-main ul > li {
+    font-size: 1.1rem;
+    line-height: 2.3rem;
+}
+
+.nvaTL .nav-main ul > li > a {
+    position: relative;
+    text-decoration: none;
+    color: #b38b4d;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    outline: 0;
+    font-family: "chaparral-pro", Times, sans-serif;
+    line-height: 1.2rem;
+}
+
+.nvaTL .news {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    padding-right: 35px;
+}
+
+.nvaTL .news p {
+    width: 245px;
+}
+
+.nvaTL .news p a {
+    text-decoration: none;
+    color: #5a5b5a;
+}
+
+.nvaTL .news > p:nth-child(2) > a {
+    color: #b38b4d;
+}
+
+.nvaTL .nav-mobile {
+    display: none;
+    position: absolute;
+    right: 10px;
+    width: 30px;
+    height: 28px;
+    margin-top: 15px;
+    cursor: pointer;
+    outline: 0;
+}
+
+.nav-mobile-menu {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: #b38b4d;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 9998;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "chaparral-pro", Times, sans-serif;
+}
+
+.nav-mobile-menu li {
+    margin-top: 30px;
+}
+
+.nav-mobile-menu a {
+    color: #b38b4d;
+    font-size: 1.6rem;
+}
+
+.nvaTL .nav-mobile span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-top: -1px;
+    background-color: #b38b4d;
+    font-size: 0px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+
+.nvaTL .nav-mobile span::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #b38b4d;
+    content: '';
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transform: translateY(350%);
+}
+
+.nvaTL .nav-mobile span::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #b38b4d;
+    content: '';
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transform: translateY(-350%);
+}
+
+@media screen and (min-width: 760px) and (max-width: 1050px) {
+    .layout {
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+
+    .nav-mobile-menu {
+        display: none !important;
+    }
+
+    .nvaTL {
+        display: flex;
+        top: 0;
+        height: 60px;
+        width: 100%;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #d4d5d4;
+    }
+
+    .nvaTL .nav-main {
+        float: right;
+        display: block;
+        margin: 0;
+        right: 30px;
+        position: absolute;
+    }
+
+    .nvaTL h1 {
+        position: absolute;
+        top: -10%;
+        left: 20px;
+    }
+
+    .nvaTL .nav-main ul > li {
+        float: left;
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+        margin: 0 10px;
+    }
+
+    .nvaTL .nav-main ul > li > a {
+        position: relative;
+        text-decoration: none;
+        color: #b38b4d;
+        font-size: .9rem;
+        letter-spacing: 1px;
+        font-weight: 500;
+        outline: 0;
+        font-family: "chaparral-pro", Times, sans-serif;
+        line-height: 1.2rem;
+    }
+
+    .nvaTL .nav-main ul > li > a::before {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        text-decoration: none;
+    }
+
+    .nvaTL .news {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .layout {
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+
+    .nvaTL {
+        display: flex;
+        top: 0;
+        height: 60px;
+        width: 100%;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #d4d5d4;
+    }
+
+    .nvaTL .nav-main {
+        display: none;
+    }
+
+    .nvaTL h1 {
+        position: absolute;
+        top: -10%;
+        left: 20px;
+    }
+
+    .nvaTL .news {
+        display: none;
+    }
+
+    .nvaTL .nav-mobile {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .nav-mobile-menu {
+        display: none !important;
+    }
+}
+
+/*# sourceMappingURL=index.css.map */
